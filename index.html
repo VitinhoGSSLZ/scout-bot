@@ -33,7 +33,7 @@
     background-image: linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
     background-size: 40px 40px;
   }
-
+ 
   /* HEADER */
   header {
     position: sticky; top: 0; z-index: 100;
@@ -53,16 +53,16 @@
   .sdot.amber { background: var(--amber); animation: pulse 1.2s infinite; }
   .sdot.red { background: var(--red); }
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
-
+ 
   /* PAGE */
   .page { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 2rem 2rem 4rem; }
-
+ 
   /* HERO */
   .hero { text-align: center; padding: 2.5rem 0 2rem; animation: fadeUp 0.5s ease both; }
   .hero-label { font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
   .hero h2 { font-family: var(--font-display); font-size: clamp(32px, 5vw, 52px); font-weight: 700; letter-spacing: 0.02em; line-height: 1.05; margin-bottom: 0.75rem; }
   .hero p { font-size: 15px; color: var(--text2); font-weight: 300; max-width: 460px; margin: 0 auto 2rem; }
-
+ 
   /* SETUP */
   .setup-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; padding: 1.75rem; max-width: 640px; margin: 0 auto 2rem; animation: fadeUp 0.6s ease 0.1s both; }
   .setup-card h3 { font-family: var(--font-display); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text3); margin-bottom: 1rem; }
@@ -75,17 +75,17 @@
   .btn-primary:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
   .setup-help { margin-top: 10px; font-size: 12px; color: var(--text3); line-height: 1.6; }
   .setup-help a { color: var(--accent); text-decoration: none; }
-
+ 
   /* STATUS */
   .status-bar { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--text2); margin-bottom: 1.25rem; min-height: 24px; }
-
+ 
   /* SUMMARY */
   .summary-bar { display: none; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 1.5rem; animation: fadeUp 0.4s ease both; }
   .summary-bar.visible { display: grid; }
   .stat-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1.25rem; text-align: center; }
   .stat-card .s-label { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text3); }
   .stat-card .s-val { font-family: var(--font-display); font-size: 28px; font-weight: 700; color: var(--accent); margin-top: 2px; }
-
+ 
   /* DATE TABS */
   .date-nav { margin-bottom: 1.5rem; animation: fadeUp 0.4s ease both; }
   .date-nav-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text3); margin-bottom: 10px; }
@@ -99,7 +99,7 @@
   .date-tab:hover { border-color: var(--border2); color: var(--text); }
   .date-tab.active { background: var(--accent); color: #0a0c0f; border-color: var(--accent); }
   .date-tab .tab-count { font-size: 11px; opacity: 0.7; margin-left: 5px; }
-
+ 
   /* LIGA FILTER */
   .liga-filter { margin-bottom: 1.5rem; animation: fadeUp 0.4s ease both; }
   .liga-filter-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text3); margin-bottom: 10px; }
@@ -111,7 +111,7 @@
   }
   .liga-chip:hover { border-color: var(--border2); color: var(--text); }
   .liga-chip.active { border-color: var(--accent2); color: var(--accent); background: rgba(0,229,160,0.07); }
-
+ 
   /* GAMES */
   .games-list { display: flex; flex-direction: column; gap: 12px; }
   .game-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: border-color 0.2s, transform 0.2s; animation: fadeUp 0.4s ease both; }
@@ -150,27 +150,27 @@
   .btn-analyze:hover { background: rgba(0,229,160,0.07); border-color: var(--accent2); color: var(--accent); }
   .btn-analyze:active { transform: scale(0.99); }
   .btn-analyze:disabled { opacity: 0.4; cursor: not-allowed; }
-
+ 
   /* EMPTY / ERROR */
   .empty-state { text-align: center; padding: 4rem 2rem; color: var(--text3); }
   .empty-state .e-icon { font-size: 48px; margin-bottom: 16px; }
   .empty-state p { font-size: 15px; }
   .error-card { background: rgba(255,71,87,0.07); border: 1px solid rgba(255,71,87,0.25); border-radius: 12px; padding: 1.25rem 1.5rem; font-size: 13px; color: #ff8f9a; line-height: 1.7; margin-top: 1rem; }
-
+ 
   /* FOOTER */
   footer { position: relative; z-index: 1; text-align: center; padding: 2rem; font-size: 12px; color: var(--text3); border-top: 1px solid var(--border); margin-top: 2rem; }
   footer a { color: var(--accent); text-decoration: none; }
-
+ 
   /* ANIMATIONS */
   @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes spin { to { transform: rotate(360deg); } }
   .spinner { width: 18px; height: 18px; border: 2px solid rgba(255,255,255,0.1); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; display: inline-block; vertical-align: middle; margin-right: 8px; }
-
+ 
   /* SCROLLBAR */
   ::-webkit-scrollbar { width: 6px; }
   ::-webkit-scrollbar-track { background: var(--bg); }
   ::-webkit-scrollbar-thumb { background: var(--bg3); border-radius: 3px; }
-
+ 
   /* RESPONSIVE */
   @media (max-width: 600px) {
     .page { padding: 1.5rem 1rem 3rem; }
@@ -184,7 +184,7 @@
 </style>
 </head>
 <body>
-
+ 
 <header>
   <div class="logo">
     <div class="logo-icon">⚽</div>
@@ -195,15 +195,15 @@
     <div class="sdot" id="sdot"></div>
   </div>
 </header>
-
+ 
 <div class="page">
-
+ 
   <div class="hero">
     <div class="hero-label">⚡ Análise pré-jogo com IA</div>
     <h2>Todos os jogos.<br>Probabilidades reais.</h2>
     <p>Odds das casas de apostas cruzadas com inteligência artificial para cada partida.</p>
   </div>
-
+ 
   <div class="setup-card">
     <h3>🔑 Configuração das APIs</h3>
     <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:10px">
@@ -222,45 +222,45 @@
       Stats: chave <code style="font-size:11px;background:var(--bg3);padding:1px 5px;border-radius:4px">api-sports.io</code> (100 req/dia grátis)
     </p>
   </div>
-
+ 
   <div class="status-bar">
     <div class="sdot" id="sdot2" style="width:7px;height:7px;flex-shrink:0"></div>
     <span id="status-txt">Aguardando chave da API</span>
   </div>
-
+ 
   <div class="summary-bar" id="summary-bar">
     <div class="stat-card"><div class="s-label">Total de jogos</div><div class="s-val" id="s-total">0</div></div>
     <div class="stat-card"><div class="s-label">Dias com jogos</div><div class="s-val" id="s-dias">0</div></div>
     <div class="stat-card"><div class="s-label">Ligas</div><div class="s-val" id="s-ligas">0</div></div>
     <div class="stat-card"><div class="s-label">Casas de aposta</div><div class="s-val" id="s-bms">0</div></div>
   </div>
-
+ 
   <!-- DATE TABS -->
   <div class="date-nav" id="date-nav" style="display:none">
     <div class="date-nav-label">📅 Filtrar por data</div>
     <div class="date-tabs" id="date-tabs"></div>
   </div>
-
+ 
   <!-- LIGA FILTER -->
   <div class="liga-filter" id="liga-filter" style="display:none">
     <div class="liga-filter-label">🏆 Filtrar por liga</div>
     <div class="liga-chips" id="liga-chips"></div>
   </div>
-
+ 
   <div id="games-container">
     <div class="empty-state">
       <div class="e-icon">📅</div>
       <p>Insira a chave e clique em BUSCAR para ver todos os jogos disponíveis.</p>
     </div>
   </div>
-
+ 
 </div>
-
+ 
 <footer>
   Scout Bot &nbsp;·&nbsp; Odds via <a href="https://the-odds-api.com" target="_blank">The Odds API</a>
   &nbsp;·&nbsp; Análise por IA (Claude) &nbsp;·&nbsp; Apenas para fins informativos
 </footer>
-
+ 
 <script>
 const SPORTS = [
   { key:'soccer_brazil_campeonato', label:'Brasileirão' },
@@ -292,14 +292,14 @@ const SPORTS = [
   { key:'soccer_belgium_first_div', label:'Pro League Belga' },
   { key:'soccer_scotland_premiership', label:'Scottish Premiership' },
 ];
-
+ 
 let allGames = {};
 let filteredGames = [];
 let selectedDate = 'all';
 let selectedLiga = 'all';
 let statsCache = {}; // cache de stats da API-Football por team id
 let oddsKey2 = ''; // API-Football key
-
+ 
 function setStatus(txt, color) {
   ['sdot','sdot2'].forEach(id => {
     const el = document.getElementById(id);
@@ -308,7 +308,7 @@ function setStatus(txt, color) {
   const t = document.getElementById('status-txt');
   if (t) t.textContent = txt;
 }
-
+ 
 function showQuota(remaining) {
   const el = document.getElementById('quota-pill');
   if (el && remaining != null) {
@@ -316,7 +316,7 @@ function showQuota(remaining) {
     el.textContent = remaining + ' req restantes';
   }
 }
-
+ 
 async function oddsGet(key, sportKey) {
   const url = `https://api.the-odds-api.com/v4/sports/${sportKey}/odds/?apiKey=${key}&regions=eu&markets=h2h&dateFormat=iso&oddsFormat=decimal`;
   const r = await fetch(url);
@@ -327,7 +327,7 @@ async function oddsGet(key, sportKey) {
   if (!r.ok) throw new Error('Erro HTTP ' + r.status);
   return await r.json();
 }
-
+ 
 function parseOdds(game) {
   for (const bm of (game.bookmakers || [])) {
     const h2h = bm.markets?.find(m => m.key === 'h2h');
@@ -339,18 +339,18 @@ function parseOdds(game) {
   }
   return null;
 }
-
+ 
 function impliedProb(odd) { return odd ? 1/odd*100 : 0; }
-
+ 
 function normProbs(h, d, a) {
   const s = h + d + a || 1;
   return { h: Math.round(h/s*100), d: Math.round(d/s*100), a: Math.round(a/s*100) };
 }
-
+ 
 function dateKey(dateStr) {
   return new Date(dateStr).toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo', day:'2-digit', month:'2-digit', year:'numeric' });
 }
-
+ 
 function dateLabel(dateStr) {
   const d = new Date(dateStr);
   const today = new Date();
@@ -362,12 +362,12 @@ function dateLabel(dateStr) {
   if (dk === tomorrowKey) return 'Amanhã';
   return d.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo', weekday:'short', day:'2-digit', month:'2-digit' });
 }
-
+ 
 async function runBot() {
   const key = document.getElementById('apikey').value.trim();
   oddsKey2 = document.getElementById('apikey2').value.trim();
   if (!key) { setStatus('Insira a chave da The Odds API antes de continuar', 'red'); return; }
-
+ 
   const btn = document.getElementById('btn-run');
   btn.disabled = true;
   btn.innerHTML = '<span class="spinner"></span>BUSCANDO';
@@ -379,7 +379,7 @@ async function runBot() {
   allGames = {};
   selectedDate = 'all';
   selectedLiga = 'all';
-
+ 
   try {
     let found = [];
     for (const sport of SPORTS) {
@@ -393,37 +393,37 @@ async function runBot() {
         if (e.message.includes('inválida')) throw e;
       }
     }
-
+ 
     if (!found.length) {
       setStatus('Nenhum jogo encontrado nas ligas monitoradas', 'amber');
       document.getElementById('games-container').innerHTML = '<div class="empty-state"><div class="e-icon">📅</div><p>Sem jogos disponíveis no momento.</p></div>';
       btn.disabled = false; btn.textContent = 'BUSCAR';
       return;
     }
-
+ 
     // ordenar por data
     found.sort((a,b) => new Date(a.commence_time) - new Date(b.commence_time));
-
+ 
     // indexar
     found.forEach(g => { allGames[g.id] = g; });
     filteredGames = found;
-
+ 
     renderSummary(found);
     buildDateTabs(found);
     buildLigaChips(found);
     applyFilters();
-
+ 
     const dias = new Set(found.map(g => dateKey(g.commence_time))).size;
     setStatus(found.length + ' jogos encontrados em ' + dias + ' dias · use os filtros acima', 'green');
-
+ 
   } catch(e) {
     setStatus('Erro: ' + e.message, 'red');
     document.getElementById('games-container').innerHTML = `<div class="error-card">⚠️ <strong>Erro:</strong> ${e.message}</div>`;
   }
-
+ 
   btn.disabled = false; btn.textContent = 'ATUALIZAR';
 }
-
+ 
 function renderSummary(games) {
   const dias = new Set(games.map(g => dateKey(g.commence_time))).size;
   const ligas = new Set(games.map(g => g._label)).size;
@@ -434,7 +434,7 @@ function renderSummary(games) {
   document.getElementById('s-bms').textContent = bms;
   document.getElementById('summary-bar').classList.add('visible');
 }
-
+ 
 function buildDateTabs(games) {
   const counts = {};
   games.forEach(g => {
@@ -446,17 +446,17 @@ function buildDateTabs(games) {
     const pb = b.split('/').reverse().join('-');
     return pa.localeCompare(pb);
   });
-
+ 
   const tabs = document.getElementById('date-tabs');
   tabs.innerHTML = '';
-
+ 
   // botão "Todos"
   const all = document.createElement('button');
   all.className = 'date-tab active';
   all.innerHTML = `Todos <span class="tab-count">(${games.length})</span>`;
   all.onclick = () => { selectedDate = 'all'; updateDateTabs(); applyFilters(); };
   tabs.appendChild(all);
-
+ 
   dates.forEach(dk => {
     // pegar um jogo desse dia para label
     const sample = games.find(g => dateKey(g.commence_time) === dk);
@@ -467,28 +467,28 @@ function buildDateTabs(games) {
     btn.onclick = () => { selectedDate = dk; updateDateTabs(); applyFilters(); };
     tabs.appendChild(btn);
   });
-
+ 
   document.getElementById('date-nav').style.display = 'block';
 }
-
+ 
 function updateDateTabs() {
   document.querySelectorAll('.date-tab').forEach(btn => {
     const isAll = !btn.dataset.date;
     btn.classList.toggle('active', isAll ? selectedDate === 'all' : btn.dataset.date === selectedDate);
   });
 }
-
+ 
 function buildLigaChips(games) {
   const ligas = [...new Set(games.map(g => g._label))].sort();
   const chips = document.getElementById('liga-chips');
   chips.innerHTML = '';
-
+ 
   const all = document.createElement('button');
   all.className = 'liga-chip active';
   all.textContent = 'Todas as ligas';
   all.onclick = () => { selectedLiga = 'all'; updateLigaChips(); applyFilters(); };
   chips.appendChild(all);
-
+ 
   ligas.forEach(liga => {
     const btn = document.createElement('button');
     btn.className = 'liga-chip';
@@ -497,32 +497,32 @@ function buildLigaChips(games) {
     btn.onclick = () => { selectedLiga = liga; updateLigaChips(); applyFilters(); };
     chips.appendChild(btn);
   });
-
+ 
   document.getElementById('liga-filter').style.display = 'block';
 }
-
+ 
 function updateLigaChips() {
   document.querySelectorAll('.liga-chip').forEach(btn => {
     const isAll = !btn.dataset.liga;
     btn.classList.toggle('active', isAll ? selectedLiga === 'all' : btn.dataset.liga === selectedLiga);
   });
 }
-
+ 
 function applyFilters() {
   const games = Object.values(allGames);
   let filtered = games;
-
+ 
   if (selectedDate !== 'all') {
     filtered = filtered.filter(g => dateKey(g.commence_time) === selectedDate);
   }
   if (selectedLiga !== 'all') {
     filtered = filtered.filter(g => g._label === selectedLiga);
   }
-
+ 
   filtered.sort((a,b) => new Date(a.commence_time) - new Date(b.commence_time));
   renderGames(filtered);
 }
-
+ 
 function renderGames(games) {
   const container = document.getElementById('games-container');
   container.innerHTML = '';
@@ -539,24 +539,24 @@ function renderGames(games) {
   });
   container.appendChild(list);
 }
-
+ 
 function buildCard(g) {
   const card = document.createElement('div');
   card.className = 'game-card';
   card.id = 'card-' + g.id;
-
+ 
   const dt = new Date(g.commence_time);
   const hora = dt.toLocaleTimeString('pt-BR', { hour:'2-digit', minute:'2-digit', timeZone:'America/Sao_Paulo' });
   const data = dt.toLocaleDateString('pt-BR', { day:'2-digit', month:'2-digit', timeZone:'America/Sao_Paulo' });
   const odds = parseOdds(g);
   const bms = (g.bookmakers||[]).map(b => b.title).slice(0,5);
-
+ 
   let matchupHTML = '', probHTML = '', favHTML = '', bmsHTML = '';
-
+ 
   if (odds) {
     const raw = { h: impliedProb(odds.homeOdd), d: impliedProb(odds.drawOdd||0), a: impliedProb(odds.awayOdd) };
     const p = normProbs(raw.h, raw.d, raw.a);
-
+ 
     matchupHTML = `
       <div class="matchup">
         <div class="team-home">
@@ -572,7 +572,7 @@ function buildCard(g) {
           <div class="team-odd">odd <span>${odds.awayOdd.toFixed(2)}</span></div>
         </div>
       </div>`;
-
+ 
     probHTML = `
       <div class="prob-section">
         <div class="prob-nums">
@@ -586,7 +586,7 @@ function buildCard(g) {
           <div class="pb-away" style="width:${p.a}%"></div>
         </div>
       </div>`;
-
+ 
     let favClass = 'fav-even', favTxt = '⚖️ Equilíbrado · mercado incerto';
     if (p.h > p.a + 8) { favClass = 'fav-home'; favTxt = '🔵 Casa favorita · ' + p.h + '% de chance'; }
     else if (p.a > p.h + 8) { favClass = 'fav-away'; favTxt = '🔴 Visitante favorito · ' + p.a + '% de chance'; }
@@ -600,16 +600,16 @@ function buildCard(g) {
       </div>`;
     favHTML = `<div style="padding:0 1.5rem 8px"><div class="fav-tag fav-even">⚠️ Odds não disponíveis</div></div>`;
   }
-
+ 
   if (bms.length) {
     bmsHTML = `<div class="bm-row">${bms.map(b=>`<span class="bm-chip">${b}</span>`).join('')}</div>`;
   }
-
+ 
   // verifica se já foi analisado (preserva entre re-renders)
   const existingAI = document.getElementById('ai-' + g.id);
   const aiContent = existingAI && !existingAI.classList.contains('idle')
     ? existingAI.innerHTML : null;
-
+ 
   card.innerHTML = `
     <div class="game-head">
       <span class="league-tag">🏆 ${g._label}</span>
@@ -623,17 +623,17 @@ function buildCard(g) {
       ${aiContent ? '✓ ANÁLISE GERADA' : '🤖 ANALISAR COM IA'}
     </button>
   `;
-
+ 
   if (aiContent) {
     setTimeout(() => {
       const btn = document.getElementById('btn-ai-' + g.id);
       if (btn) btn.disabled = true;
     }, 0);
   }
-
+ 
   return card;
 }
-
+ 
 // Chama API-Football via proxy CORS (allorigins.win)
 async function apifootball(path) {
   const target = encodeURIComponent('https://v3.football.api-sports.io/' + path);
@@ -648,7 +648,7 @@ async function apifootball(path) {
   }
   return inner.response || [];
 }
-
+ 
 // Injeta o header x-apisports-key via query-string trick não funciona com allorigins,
 // então usamos o proxy corsplugin.io que repassa headers customizados
 async function apifootballDirect(path, key) {
@@ -668,28 +668,28 @@ async function apifootballDirect(path, key) {
   }
   return inner.response || [];
 }
-
+ 
 async function fetchTeamStats(teamName, key) {
   try {
     // 1. Busca o time pelo nome
     const teams = await apifootballDirect(`teams?name=${encodeURIComponent(teamName)}`, key);
     if (!teams.length) return null;
     const teamId = teams[0].team.id;
-
+ 
     // 2. Busca as ligas ativas desse time (para pegar league_id da temporada atual)
     const seasons = await apifootballDirect(`teams/seasons?team=${teamId}`, key);
     const currentSeason = seasons.length ? seasons[seasons.length - 1] : 2024;
-
+ 
     // 3. Busca os fixtures recentes para calcular estatísticas manualmente
     const fixtures = await apifootballDirect(
       `fixtures?team=${teamId}&season=${currentSeason}&last=10`, key
     );
-
+ 
     if (!fixtures.length) return null;
-
+ 
     let goalsFor = 0, goalsAgainst = 0, btts = 0, over25 = 0, played = 0;
     let form = '';
-
+ 
     fixtures.forEach(f => {
       const isHome = f.teams.home.id === teamId;
       const gf = isHome ? f.goals.home : f.goals.away;
@@ -705,9 +705,9 @@ async function fetchTeamStats(teamName, key) {
       else if (isHome ? f.teams.home.winner : f.teams.away.winner) form += 'W';
       else form += 'L';
     });
-
+ 
     if (!played) return null;
-
+ 
     return {
       found: true,
       teamId,
@@ -723,7 +723,7 @@ async function fetchTeamStats(teamName, key) {
     return null;
   }
 }
-
+ 
 async function fetchStatsForGame(homeTeam, awayTeam) {
   if (!oddsKey2) return null;
   try {
@@ -736,7 +736,7 @@ async function fetchStatsForGame(homeTeam, awayTeam) {
     return null;
   }
 }
-
+ 
 async function analyzeGame(id) {
   const g = allGames[id];
   if (!g) return;
@@ -746,12 +746,12 @@ async function analyzeGame(id) {
   btn.innerHTML = '<span class="spinner"></span> ANALISANDO...';
   box.className = 'ai-box idle';
   box.innerHTML = '⏳ Buscando estatísticas dos times...';
-
+ 
   const odds = parseOdds(g);
   let oddsText = 'Odds de resultado não disponíveis.';
   let probText = '';
   let equilibrio = '';
-
+ 
   if (odds) {
     const raw = { h: impliedProb(odds.homeOdd), d: impliedProb(odds.drawOdd||0), a: impliedProb(odds.awayOdd) };
     const p = normProbs(raw.h, raw.d, raw.a);
@@ -760,11 +760,11 @@ async function analyzeGame(id) {
     const diff = Math.abs(p.h - p.a);
     equilibrio = diff < 10 ? 'jogo muito equilibrado pelas odds' : diff < 20 ? 'leve favorito nas odds' : 'favorito claro nas odds';
   }
-
+ 
   const dt = new Date(g.commence_time);
   const dataHora = dt.toLocaleString('pt-BR', { timeZone:'America/Sao_Paulo', day:'2-digit', month:'2-digit', year:'numeric', hour:'2-digit', minute:'2-digit' });
   const bmsStr = (g.bookmakers||[]).map(b=>b.title).slice(0,5).join(', ') || 'N/A';
-
+ 
   // Tenta buscar stats via API-Football (corsproxy.io)
   let statsText = '';
   if (oddsKey2) {
@@ -784,11 +784,11 @@ async function analyzeGame(id) {
       statsText = '\n(Estatísticas da API-Football indisponíveis — análise baseada somente nas odds)';
     }
   }
-
+ 
   box.innerHTML = '🤖 IA cruzando dados e gerando análise...';
-
+ 
   const prompt = `Você é um analista profissional de futebol especializado em mercados alternativos de apostas esportivas. NUNCA recomende apostar no resultado final (1, X ou 2).
-
+ 
 DADOS DA PARTIDA:
 Partida: ${g.home_team} vs ${g.away_team}
 Liga: ${g._label}
@@ -798,39 +798,62 @@ ${probText}
 Equilíbrio: ${equilibrio}
 Casas consultadas: ${bmsStr}
 ${statsText}
-
+ 
 ANALISE EXCLUSIVAMENTE mercados alternativos:
-
+ 
 1. **Over/Under 2.5 gols** — com base nas médias de gols e no equilíbrio das odds, a partida tende a ter muitos ou poucos gols? Justifique com os dados.
 2. **Ambas Marcam (BTTS - Sim/Não)** — qual a tendência? Use o histórico de BTTS e as médias de gols sofridos.
 3. **Handicap Asiático** — se houver favorito claro, o handicap faz sentido?
 4. **🎯 Aposta recomendada** — escolha UM mercado alternativo (Over/Under, BTTS, Handicap, Total de cantos, etc.) com justificativa objetiva.
 5. **Confiança:** Baixa / Média / Alta — e por quê.
-
+ 
 Responda em português, tom direto de analista profissional, máximo 8 linhas.`;
-
-  try {
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 1000,
-        messages: [{ role: 'user', content: prompt }]
-      })
-    });
-    const data = await res.json();
-    const txt = (data.content||[]).map(c=>c.text||'').join('');
-    box.className = 'ai-box';
-    box.innerHTML = `<span class="ai-label">🤖 Análise IA · mercados alternativos</span>` + (txt||'Sem resposta').replace(/\n/g,'<br>');
-    btn.textContent = '✓ ANÁLISE GERADA';
-  } catch(e) {
-    box.className = 'ai-box';
-    box.innerHTML = '❌ Erro ao chamar IA: ' + e.message;
-    btn.disabled = false;
-    btn.textContent = '🔄 TENTAR NOVAMENTE';
+ 
+  // Tenta 3 proxies em sequência até um funcionar
+  const PROXIES = [
+    (url) => `https://corsproxy.io/?${encodeURIComponent(url)}`,
+    (url) => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+    (url) => `https://thingproxy.freeboard.io/fetch/${url}`,
+  ];
+ 
+  let lastErr = '';
+  for (const makeProxy of PROXIES) {
+    try {
+      const proxyUrl = makeProxy('https://api.anthropic.com/v1/messages');
+      const res = await fetch(proxyUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'anthropic-version': '2023-06-01',
+          'anthropic-dangerous-direct-browser-access': 'true'
+        },
+        body: JSON.stringify({
+          model: 'claude-sonnet-4-20250514',
+          max_tokens: 1000,
+          messages: [{ role: 'user', content: prompt }]
+        })
+      });
+      if (!res.ok) { lastErr = 'HTTP ' + res.status; continue; }
+      const data = await res.json();
+      if (data.error) { lastErr = data.error.message; continue; }
+      const txt = (data.content||[]).map(c=>c.text||'').join('');
+      if (!txt) { lastErr = 'Resposta vazia'; continue; }
+      box.className = 'ai-box';
+      box.innerHTML = `<span class="ai-label">🤖 Análise IA · mercados alternativos</span>` + txt.replace(/\n/g,'<br>');
+      btn.textContent = '✓ ANÁLISE GERADA';
+      return; // sucesso — para aqui
+    } catch(e) {
+      lastErr = e.message;
+    }
   }
+ 
+  // Todos os proxies falharam
+  box.className = 'ai-box';
+  box.innerHTML = '❌ Erro ao chamar IA: ' + lastErr + '<br><small style="opacity:.6">Todos os proxies falharam. Tente novamente em instantes.</small>';
+  btn.disabled = false;
+  btn.textContent = '🔄 TENTAR NOVAMENTE';
 }
 </script>
 </body>
 </html>
+ 
